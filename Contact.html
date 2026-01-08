@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Contact</title>
+<link rel="stylesheet" href="styles.css">
+    </head>
+    <script>
+function showMessage() {
+    document.getElementById('successMessage').innerText =
+        "Form submitted successfully!";
+    return false; 
+}
+
+function clearMessage() {
+    document.getElementById('successMessage').innerText = "";
+}
+</script>
+    <body>
+         <nav>
+       <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="Contact.html">Contact</a>
+    </nav>
+<h1 >Contact</h1>
+<p>Please use the form below to contact us for any inquiries or assistance.</p>
+<form onsubmit="return showMessage()" onreset="clearMessage()">
+    <table>
+        <tr>
+            <td>
+<label for="name">Name:</label>
+            </td>
+            <td>
+<input type="text" id="name" name="name" value="" required>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="email">e-mail:</label></td>
+            <td>
+<input type="email" id="email" name="email" value="" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+<label for="message">Your Message:</label><br>
+            </td>
+            <td><textarea rows="5" placeholder="Your Message" required></textarea></td>
+        </tr>
+        <tr>
+            <td>  <input type="submit" value="Submit"></td>
+            <td> <input type="reset" value="reset"></td>
+        </tr>
+    </table>
+  
+</form> 
+<h5 id="successMessage" ></h5>
+<p>  
+    If you have any queries about this website, contact the members below for more information.
+</p>
+<footer>
+    <table width="100%">
+        <tr>
+            <td >
+                <h3>Home Page</h3>
+                <p>Member1</p>
+                <p>Email: member1@emc.com</p>
+                <p>Phone: +91 9876543210</p>
+            </td>
+
+            <td >
+                <h3>About Page</h3>
+                <p>Member2</p>
+                <p>Email: member2@emc.com</p>
+                <p>Phone: +91 9876543210</p>
+            </td>
+
+            <td >
+                <h3>Contact Page</h3>
+                <p>Member3</p>
+                <p>Email: member3@emc.com</p>
+                <p>Phone: +91 9876543210</p>
+            </td>
+
+            <td >
+                <h3>Page Style</h3>
+                <p>Member 4</p>
+                <p>Email: member4@emc.com</p>
+                <p>Phone: +91 9876543210</p>
+            </td>
+
+            <td >
+                <h3>Website Management</h3>
+                <p>TL</p>
+                <p>Email: tl_group_1@emc.com</p>
+                <p>Phone: +91 9876543210</p>
+            </td>
+        </tr>
+    </table>
+</footer>
+
+    </body>
+</html>
