@@ -5,15 +5,30 @@
 <link rel="stylesheet" href="styles.css">
     </head>
     <script>
-function showMessage() {
+/*function showMessage() {
     document.getElementById('successMessage').innerText =
         "Form submitted successfully!";
     return false; 
 }
 
+
+
 function clearMessage() {
     document.getElementById('successMessage').innerText = "";
+}*/
+function showMessage() {
+    const msg = document.getElementById('successMessage');
+    msg.innerText = "Form submitted successfully!";
+    msg.style.display = "block";   // SHOW message
+    return false; // prevent form submission
 }
+
+function clearMessage() {
+    const msg = document.getElementById('successMessage');
+    msg.innerText = "";
+    msg.style.display = "none";    // HIDE message
+}
+</script>
 </script>
     <body>
          <nav>
